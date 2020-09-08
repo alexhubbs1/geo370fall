@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Map</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+   <script src = "./data/bell_tower_4326.geojson"></script>
+   <script src = "./data/davis_library_4326.geojson"></script>
+   <script src = "./data/planetarium_4326.geojson"></script>
+</head>
+<body>
+    
+    <div id="mapid"></div>
+    <style>
+        #mapid{ width: 900px; height: 800px}
+    </style>
+
+    <script>
+        var map = L.map('mapid').setView([35.91, -79.05], 17);
+        L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {}).addTo(map)
+        L.marker([35.911042, -79.048177]).addTo(map)
+            .bindPopup("Davis Library")
+            .openPopup();
+
+        L.marker([35.908603, -79.049218]).addTo(map)
+            .bindPopup("Bell Tower")
+            .openPopup();
+
+        L.marker([35.913907, -79.050583]).addTo(map)
+            .bindPopup("Morehead Planetarium")
+            .openPopup();
+
+        // L.geoJSON(uncwell).addTo(map)
+            var dlIcon = L.icon({
+                iconUrl: 'https://png.pngtree.com/png-clipart/20190520/original/pngtree-primary-and-secondary-school-start-date-school-library-bookshelf-png-image_3939704.jpg',
+                iconSize: [80,80],
+                popupAnchor: [0,0]
+
+            });
+
+            var btIcon = L.icon({
+                iconUrl: 'https://www.goodfreephotos.com/albums/united-states/north-carolina/unc/morehead-patterson-bell-tower-unc-chapel-hill-north-carolina.jpg',
+                iconSize: [80,80],
+                popupAnchor: [0,0]
+
+            });
+    
+            var mpIcon = L.icon({
+                iconUrl: 'https://image.flaticon.com/icons/svg/899/899824.svg',
+                iconSize: [80,80],
+                popupAnchor: [0,0]
+            });
+
+            var customPopup1 =  "Davis Library<br/><img src='https://library.unc.edu/wp-content/uploads/2019/08/davis.jpg'width='100px'/>";
+            var customPopup2 =  "Morehead Planetarium<br/><img src='https://assets.simpleviewinc.com/simpleview/image/upload/crm/chapelhill/Morehead-Planetarium-Sceince-Center-5ea50ca75056b3a_5ea50d90-5056-b3a8-496aef3392379209.jpg'width='100px'/>";
+            var customPopup3 =  "UNC Chapel Hill Bell Tower<br/><img src='https://assets.simpleviewinc.com/simpleview/image/upload/crm/chapelhill/Bell-Tower-620x410-f2dedab15056b3a_f2dedc8c-5056-b3a8-49bdb6605f438449.jpg'width='100px'/>";
+            L.geoJSON(davislibrary, { // a
+            pointToLayer: function (feature, latlng) { // b
+            return L.marker(latlng, {icon: dlIcon});}}) // c
+            .bindPopup(customPopup1) // d
+            .addTo(map); //
+            L.geoJSON(uncBellTower, { // a
+            pointToLayer: function (feature, latlng) { // b
+            return L.marker(latlng, {icon: btIcon});}}) // c
+            .bindPopup(customPopup3) // d
+            .addTo(map); //
+            L.geoJSON(moreheadPlanetarium, { // a
+            pointToLayer: function (feature, latlng) { // b
+            return L.marker(latlng, {icon: mpIcon});}}) // c
+            .bindPopup(customPopup2) // d
+            .addTo(map); //
+
+        
+
+    </script>
+
+</body>
+</html>
