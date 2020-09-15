@@ -13,9 +13,7 @@
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
 
-   <script src = "./data/Matthews_elementary_4326.geojson"></script>
-   <script src = "./data/Matthews_library_4326.geojson"></script>
-   <script src = "./data/Stumptown_park_4326.geojson"></script>
+   <script src = "./data/Matt" ></script>
   
   <style type="text/css">
     body {
@@ -35,24 +33,18 @@
   <script>
       var map = L.map('map').setView([35.11614899125402, -80.72390369848927], 14.0);
 
+      var daMarker1 = L.marker([35.115460, -80.723463])
+        .bindPopup("Stumptown Park")
+        .openPopup();
+      var daMarker2 = L.marker([35.115996, -80.718362])
+        .bindPopup("Matthews Library")
+        .openPopup();
+      var daMarker3 = L.marker([35.113389, -80.723639])
+        .bindPopup("Matthews Elementary")
+        .openPopup();
+
       
-
-
-        
-
-      var OSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	    maxZoom: 19,
-	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-      var daPhoto = L.tileLayer('./Tiles_HW4/{z}/{x}/{y}.png', {
-        minZoom: 12,
-        maxZoom: 16,
-        tms: false,
-        attribution: 'USGS'
-      })
-
-      var icon1 = L.icon({
+        var icon1 = L.icon({
         iconURL: 'https://www.pngrepo.com/png/110494/180/park.png',
         iconSize: [50,50],
         popupAnchor: [0,0]
@@ -75,41 +67,48 @@
       var customPopup2 =  "Matthews Library<br/><img src='https://www.matthewsnchomeforsale.com/wp-content/uploads/2016/07/Matthews-NC-Town-Hall.jpg'width='100px'/>";
       var customPopup3 =  "Matthews Elementary<br/><img src='http://matthewsfirst.weebly.com/uploads/4/9/2/2/49228707/7659837.jpg?519'width='100px'/>";
 
-      var geo1 = L.geoJSON(stumptownPark, { // a
+            L.geoJSON(stumptownPark, { // a
             pointToLayer: function (feature, latlng) { // b
             return L.marker(latlng, {icon: icon1});}}) // c
-            .bindPopup(customPopup1); // d
-             //
-             
-      var geo2 = L.geoJSON(matthewsLibrary, { // a
+            .bindPopup(customPopup1) // d
+            .addTo(map); //
+            L.geoJSON(matthewsLibrary, { // a
             pointToLayer: function (feature, latlng) { // b
             return L.marker(latlng, {icon: icon2});}}) // c
-            .bindPopup(customPopup2); // d
-            
-      var geo3 = L.geoJSON(matthewsElementary, { // a
+            .bindPopup(customPopup2) // d
+            .addTo(map); //
+            L.geoJSON(matthewsElementary, { // a
             pointToLayer: function (feature, latlng) { // b
             return L.marker(latlng, {icon: icon3});}}) // c
-            .bindPopup(customPopup3); //
+            .bindPopup(customPopup3) // d
+            .addTo(map); //
+
+      var OSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	    maxZoom: 19,
+	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+      var daPhoto = L.tileLayer('./Tiles_HW4/{z}/{x}/{y}.png', {
+        minZoom: 12,
+        maxZoom: 16,
+        tms: false,
+        attribution: 'USGS'
+      })
 
       var daTiles = {
         "Open Street Map": OSM,
         "Matthews Photo": daPhoto
       }
 
-      var daPoints = {
-        "Stumptown Park": geo1,
-        "Matthews Library": geo2,
-        "Matthews Elementary": geo3
+      var daVectors = {
+        "Stumptown Park":daMarker1,
+        "Matthews Library":daMarker2,
+        "Matthews Elementary":daMarker3
       }
 
-      
-      
 
-
-      L.control.layers(daTiles, daPoints).addTo(map);
+      L.control.layers(daTiles, daVectors).addTo(map);
       
-     
-
   </script>
 </body>
 </html>
