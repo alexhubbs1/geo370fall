@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Leaflet Preview</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+
+   <script src = "./data/Matthews_elementary_4326.geojson"></script>
+   <script src = "./data/Matthews_library_4326.geojson"></script>
+   <script src = "./data/Stumptown_park_4326.geojson"></script>
+  
+  <style type="text/css">
+    body {
+       margin: 0;
+       padding: 0;
+    }
+    html, body, #map{
+       width: 100%;
+       height: 100%;
+    }
+  </style>
+
+
+</head>
+<body>
+  <div id="map"></div>
+  <script>
+      var map = L.map('map').setView([35.11614899125402, -80.72390369848927], 14.0);
+
+      var daMarker1 = L.marker([35.115460, -80.723463])
+        .bindPopup("Stumptown Park")
+        .openPopup();
+      var daMarker2 = L.marker([35.115996, -80.718362])
+        .bindPopup("Matthews Library")
+        .openPopup();
+      var daMarker3 = L.marker([35.113389, -80.723639])
+        .bindPopup("Matthews Elementary")
+        .openPopup();
+
+      
+        var icon1 = L.icon({
+        iconURL: 'https://www.pngrepo.com/png/110494/180/park.png',
+        iconSize: [50,50],
+        popupAnchor: [0,0]
+      });
+
+      var icon2 = L.icon({
+        iconURL: 'https://png.pngtree.com/png-clipart/20190520/original/pngtree-primary-and-secondary-school-start-date-school-library-bookshelf-png-image_3939704.jpg',
+        iconSize: [50,50],
+        popupAnchor: [0,0]
+      });
+
+      var icon3 = L.icon({
+        iconURL: 'https://image.shutterstock.com/image-vector/school-vector-icon-isolated-building-260nw-527801908.jpg',
+        iconSize: [50,50],
+        popupAnchor: [0,0]
+      });
+      
+
+      var customPopup1 =  "Stumptown Park<br/><img src='https://charlottecultureguide.com/images/organizations/204.jpg?v=1503676408'width='100px'/>";
+      var customPopup2 =  "Matthews Library<br/><img src='https://www.matthewsnchomeforsale.com/wp-content/uploads/2016/07/Matthews-NC-Town-Hall.jpg'width='100px'/>";
+      var customPopup3 =  "Matthews Elementary<br/><img src='http://matthewsfirst.weebly.com/uploads/4/9/2/2/49228707/7659837.jpg?519'width='100px'/>";
+
+            L.geoJSON(stumptownPark, { // a
+            pointToLayer: function (feature, latlng) { // b
+            return L.marker(latlng, {icon: icon1});}}) // c
+            .bindPopup(customPopup1) // d
+            .addTo(map); //
+            L.geoJSON(matthewsLibrary, { // a
+            pointToLayer: function (feature, latlng) { // b
+            return L.marker(latlng, {icon: icon2});}}) // c
+            .bindPopup(customPopup2) // d
+            .addTo(map); //
+            L.geoJSON(matthewsElementary, { // a
+            pointToLayer: function (feature, latlng) { // b
+            return L.marker(latlng, {icon: icon3});}}) // c
+            .bindPopup(customPopup3) // d
+            .addTo(map); //
+
+      var OSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	    maxZoom: 19,
+	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+      var daPhoto = L.tileLayer('./Tiles_HW4/{z}/{x}/{y}.png', {
+        minZoom: 12,
+        maxZoom: 16,
+        tms: false,
+        attribution: 'USGS'
+      })
+
+      var daTiles = {
+        "Open Street Map": OSM,
+        "Matthews Photo": daPhoto
+      }
+
+      var daVectors = {
+        "Stumptown Park":daMarker1,
+        "Matthews Library":daMarker2,
+        "Matthews Elementary":daMarker3
+      }
+
+
+      L.control.layers(daTiles, daVectors).addTo(map);
+      
+  </script>
+</body>
+</html>
