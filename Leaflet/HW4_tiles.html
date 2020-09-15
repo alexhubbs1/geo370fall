@@ -46,7 +46,35 @@
         .openPopup();
 
       
-        var icon1 = L.icon({
+      
+
+      var OSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	    maxZoom: 19,
+	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+      var daPhoto = L.tileLayer('./Tiles_HW4/{z}/{x}/{y}.png', {
+        minZoom: 12,
+        maxZoom: 16,
+        tms: false,
+        attribution: 'USGS'
+      })
+
+      var daTiles = {
+        "Open Street Map": OSM,
+        "Matthews Photo": daPhoto
+      }
+
+      var daVectors = {
+        "Stumptown Park":daMarker1,
+        "Matthews Library":daMarker2,
+        "Matthews Elementary":daMarker3
+      }
+
+
+      L.control.layers(daTiles, daVectors).addTo(map);
+      
+      var icon1 = L.icon({
         iconURL: 'https://www.pngrepo.com/png/110494/180/park.png',
         iconSize: [50,50],
         popupAnchor: [0,0]
@@ -85,32 +113,6 @@
             .bindPopup(customPopup3) // d
             .addTo(map); //
 
-      var OSM = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	    maxZoom: 19,
-	    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        }).addTo(map);
-
-      var daPhoto = L.tileLayer('./Tiles_HW4/{z}/{x}/{y}.png', {
-        minZoom: 12,
-        maxZoom: 16,
-        tms: false,
-        attribution: 'USGS'
-      })
-
-      var daTiles = {
-        "Open Street Map": OSM,
-        "Matthews Photo": daPhoto
-      }
-
-      var daVectors = {
-        "Stumptown Park":daMarker1,
-        "Matthews Library":daMarker2,
-        "Matthews Elementary":daMarker3
-      }
-
-
-      L.control.layers(daTiles, daVectors).addTo(map);
-      
   </script>
 </body>
 </html>
