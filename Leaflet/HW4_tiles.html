@@ -33,7 +33,16 @@
 <body>
   <div id="map"></div>
   <script>
-      var map = L.map('map').setView([35.11614899125402, -80.72390369848927], 14.0);
+      var map = L.map('map').setView([35.11614899125402, -80.72390369848927], 15.0);
+
+      //var librarymarker = L.marker([35.115996, -80.718362])
+        //.bindPopup(customPopup2);
+
+      //var stumptownmarker = L.marker([35.115460, -80.723463])
+        //.bindPopup(customPopup1);
+      //var elementarymarker = L.marker([35.113389, -80.723639])
+        //.bindPopup(customPopup3)
+        //.openPopup();
 
 
       var OSM = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
