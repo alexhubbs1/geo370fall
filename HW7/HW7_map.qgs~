@@ -846,9 +846,6 @@ def my_form_open(dialog, layer, feature):
       <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
       <SelectionColorRedPart type="int">255</SelectionColorRedPart>
     </Gui>
-    <Layouts>
-      <lastLayoutExportDir type="QString">/Users/alexanderhubbs/Downloads/Geo370fall/geo370fall/HW7/Homework_7_map.pdf</lastLayoutExportDir>
-    </Layouts>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
@@ -1284,16 +1281,6 @@ def my_form_open(dialog, layer, feature):
       </LayoutItem>
       <customproperties>
         <property value="png" key="atlasRasterFormat"/>
-        <property value="0" key="forceVector"/>
-        <property value="1" key="pdfAppendGeoreference"/>
-        <property value="0" key="pdfCreateGeoPdf"/>
-        <property value="0" key="pdfDisableRasterTiles"/>
-        <property value="0" key="pdfExportGeoPdfFeatures"/>
-        <property value="" key="pdfExportThemes"/>
-        <property value="1" key="pdfIncludeMetadata"/>
-        <property value="0" key="pdfOgcBestPracticeFormat"/>
-        <property value="1" key="pdfSimplify"/>
-        <property value="0" key="pdfTextFormat"/>
       </customproperties>
       <Atlas hideCoverage="0" coverageLayer="" filenamePattern="'output_'||@atlas_featurenumber" sortFeatures="0" pageNameExpression="" filterFeatures="0" enabled="0"/>
     </Layout>
