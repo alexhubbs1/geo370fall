@@ -1,0 +1,145 @@
+<Layout worldFileMap="{61782451-cbb0-49f5-8864-e7e267612bd4}" name="Natural Breaks Poverty Map" units="mm" printResolution="300">
+ <Snapper tolerance="5" snapToGrid="0" snapToGuides="1" snapToItems="1"/>
+ <Grid offsetUnits="mm" resolution="10" offsetX="0" resUnits="mm" offsetY="0"/>
+ <PageCollection>
+  <symbol alpha="1" clip_to_extent="1" name="" type="fill" force_rhr="0">
+   <layer locked="0" enabled="1" class="SimpleFill" pass="0">
+    <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+    <prop v="255,255,255,255" k="color"/>
+    <prop v="miter" k="joinstyle"/>
+    <prop v="0,0" k="offset"/>
+    <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+    <prop v="MM" k="offset_unit"/>
+    <prop v="35,35,35,255" k="outline_color"/>
+    <prop v="no" k="outline_style"/>
+    <prop v="0.26" k="outline_width"/>
+    <prop v="MM" k="outline_width_unit"/>
+    <prop v="solid" k="style"/>
+    <data_defined_properties>
+     <Option type="Map">
+      <Option name="name" type="QString" value=""/>
+      <Option name="properties"/>
+      <Option name="type" type="QString" value="collection"/>
+     </Option>
+    </data_defined_properties>
+   </layer>
+  </symbol>
+  <LayoutItem templateUuid="{1b986057-9315-4cb4-b560-77bdfc603ad7}" itemRotation="0" opacity="1" referencePoint="0" frame="false" groupUuid="" excludeFromExports="0" positionOnPage="0,0,mm" uuid="{1b986057-9315-4cb4-b560-77bdfc603ad7}" position="0,0,mm" frameJoinStyle="miter" blendMode="0" positionLock="false" id="" visibility="1" zValue="0" type="65638" background="true" outlineWidthM="0.3,mm" size="297,210,mm">
+   <FrameColor alpha="255" green="0" blue="0" red="0"/>
+   <BackgroundColor alpha="255" green="255" blue="255" red="255"/>
+   <LayoutObject>
+    <dataDefinedProperties>
+     <Option type="Map">
+      <Option name="name" type="QString" value=""/>
+      <Option name="properties"/>
+      <Option name="type" type="QString" value="collection"/>
+     </Option>
+    </dataDefinedProperties>
+    <customproperties/>
+   </LayoutObject>
+   <symbol alpha="1" clip_to_extent="1" name="" type="fill" force_rhr="0">
+    <layer locked="0" enabled="1" class="SimpleFill" pass="0">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,255,255,255" k="color"/>
+     <prop v="miter" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="no" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option name="name" type="QString" value=""/>
+       <Option name="properties"/>
+       <Option name="type" type="QString" value="collection"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </LayoutItem>
+  <GuideCollection visible="1"/>
+ </PageCollection>
+ <LayoutItem boxSpace="2" positionLock="false" rasterBorderWidth="0" itemRotation="0" position="171.396,73.3337,mm" groupUuid="" title="" symbolAlignment="1" symbolHeight="4" resizeToContents="1" id="" rasterBorder="1" frame="false" titleAlignment="1" wrapChar="" lineSpacing="1" splitLayer="0" referencePoint="0" zValue="3" columnCount="1" background="true" blendMode="0" templateUuid="{f72f77d2-89bc-4152-86a5-59390fc87a39}" wmsLegendWidth="50" type="65642" opacity="1" outlineWidthM="0.3,mm" legendFilterByAtlas="0" positionOnPage="171.396,73.3337,mm" wmsLegendHeight="25" rasterBorderColor="0,0,0,255" size="94.2969,50.5594,mm" columnSpace="2" frameJoinStyle="miter" fontColor="#000000" uuid="{f72f77d2-89bc-4152-86a5-59390fc87a39}" symbolWidth="7" equalColumnWidth="0" visibility="1" excludeFromExports="0" map_uuid="{61782451-cbb0-49f5-8864-e7e267612bd4}">
+  <FrameColor alpha="255" green="0" blue="0" red="0"/>
+  <BackgroundColor alpha="255" green="255" blue="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option name="name" type="QString" value=""/>
+     <Option name="properties"/>
+     <Option name="type" type="QString" value="collection"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <styles>
+   <style alignment="1" name="title" marginBottom="3.5">
+    <styleFont description=".SF NS Text,16,-1,5,50,0,0,0,0,0" style=""/>
+   </style>
+   <style alignment="1" name="group" marginTop="3">
+    <styleFont description=".SF NS Text,14,-1,5,50,0,0,0,0,0" style=""/>
+   </style>
+   <style alignment="1" name="subgroup" marginTop="3">
+    <styleFont description=".SF NS Text,12,-1,5,50,0,0,0,0,0" style=""/>
+   </style>
+   <style alignment="1" name="symbol" marginTop="2.5">
+    <styleFont description=".SF NS Text,13,-1,5,50,0,0,0,0,0" style=""/>
+   </style>
+   <style alignment="1" marginLeft="2" name="symbolLabel" marginTop="2">
+    <styleFont description=".SF NS Text,12,-1,5,50,0,0,0,0,0" style=""/>
+   </style>
+  </styles>
+  <layer-tree-group>
+   <customproperties/>
+   <layer-tree-layer expanded="1" source="./nd_102720.shp" legend_exp="" name="nd_102720 copy" id="nd_102720_dde614a0_1f00_4ace_bb12_fe56333b195c" checked="Qt::Checked" providerKey="ogr">
+    <customproperties>
+     <property value="Ratio of People in Poverty per 1000 in Each County" key="legend/title-label"/>
+    </customproperties>
+   </layer-tree-layer>
+   <custom-order enabled="0">
+    <item>nd_102720_dde614a0_1f00_4ace_bb12_fe56333b195c</item>
+   </custom-order>
+  </layer-tree-group>
+ </LayoutItem>
+ <LayoutItem templateUuid="{ed776e92-6e6b-47c3-95c5-9e1356e14c32}" itemRotation="0" opacity="1" referencePoint="0" frame="false" groupUuid="" excludeFromExports="0" positionOnPage="15.3489,16.2016,mm" uuid="{ed776e92-6e6b-47c3-95c5-9e1356e14c32}" position="15.3489,16.2016,mm" marginX="0" marginY="0" frameJoinStyle="miter" htmlState="0" blendMode="0" positionLock="false" id="" visibility="1" halign="8" zValue="2" type="65641" labelText="Ratio of People Living in Poverty to County Population, Classified by Natural Breaks" valign="32" background="false" outlineWidthM="0.3,mm" size="267.753,33.256,mm">
+  <FrameColor alpha="255" green="0" blue="0" red="0"/>
+  <BackgroundColor alpha="255" green="255" blue="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option name="name" type="QString" value=""/>
+     <Option name="properties"/>
+     <Option name="type" type="QString" value="collection"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont description=".SF NS Text,30,-1,5,50,0,0,0,0,0" style=""/>
+  <FontColor alpha="255" green="0" blue="0" red="0"/>
+ </LayoutItem>
+ <LayoutItem templateUuid="{61782451-cbb0-49f5-8864-e7e267612bd4}" itemRotation="0" opacity="1" referencePoint="0" frame="false" followPresetName="" groupUuid="" excludeFromExports="0" positionOnPage="0,26.1637,mm" uuid="{61782451-cbb0-49f5-8864-e7e267612bd4}" position="0,26.1637,mm" mapRotation="0" frameJoinStyle="miter" blendMode="0" positionLock="false" id="" visibility="1" zValue="1" type="65639" drawCanvasItems="true" labelMargin="0,mm" background="true" outlineWidthM="0.3,mm" followPreset="false" mapFlags="0" size="268.149,157.673,mm" keepLayerSet="false">
+  <FrameColor alpha="255" green="0" blue="0" red="0"/>
+  <BackgroundColor alpha="255" green="255" blue="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option name="name" type="QString" value=""/>
+     <Option name="properties"/>
+     <Option name="type" type="QString" value="collection"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmax="4832679.95987913478165865" xmin="640343.90521529410034418" ymax="1324122.84346551029011607" ymin="-1140984.67290817620232701"/>
+  <LayerSet/>
+  <AtlasMap margin="0.10000000000000001" scalingMode="2" atlasDriven="0"/>
+  <labelBlockingItems/>
+ </LayoutItem>
+ <customproperties>
+  <property value="png" key="atlasRasterFormat"/>
+ </customproperties>
+ <Atlas filenamePattern="'output_'||@atlas_featurenumber" enabled="0" pageNameExpression="" filterFeatures="0" coverageLayer="" sortFeatures="0" hideCoverage="0"/>
+</Layout>

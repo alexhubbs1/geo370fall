@@ -20,6 +20,9 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
+    <layer-tree-layer checked="Qt::Unchecked" id="north_dakota_counties_c39b0d42_58ee_4aef_976b_11023271f736" name="north_dakota_counties" providerKey="ogr" legend_exp="" source="./north_dakota_counties.geojson|layername=north_dakota_counties" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
     <layer-tree-layer checked="Qt::Checked" id="ACSST5Y2018_S1701_data_with_overlays_2020_09_18T181020_0b16864a_ee02_4e45_a8ce_58c93ba72443" name="ACSST5Y2018.S1701_data_with_overlays_2020-09-18T181020" providerKey="delimitedtext" legend_exp="" source="./ACSST5Y2018.S1701_2020-09-18T181023/ACSST5Y2018.S1701_data_with_overlays_2020-09-18T181020.csv?type=csv&amp;detectTypes=yes&amp;geomType=none&amp;subsetIndex=no&amp;watchFile=no" expanded="1">
       <customproperties/>
     </layer-tree-layer>
@@ -28,10 +31,12 @@
     </layer-tree-layer>
     <custom-order enabled="0">
       <item>nd_102720_c64b6ae7_f6a1_4d69_a20a_ad74ea184c14</item>
+      <item>north_dakota_counties_c39b0d42_58ee_4aef_976b_11023271f736</item>
     </custom-order>
   </layer-tree-group>
   <snapping-settings tolerance="12" unit="1" type="1" mode="2" intersection-snapping="0" enabled="0">
     <individual-layer-settings>
+      <layer-setting tolerance="12" type="1" id="north_dakota_counties_c39b0d42_58ee_4aef_976b_11023271f736" units="1" enabled="0"/>
       <layer-setting tolerance="12" type="1" id="nd_102720_c64b6ae7_f6a1_4d69_a20a_ad74ea184c14" units="1" enabled="0"/>
     </individual-layer-settings>
   </snapping-settings>
@@ -63,6 +68,11 @@
   </mapcanvas>
   <projectModels/>
   <legend updateDrawingOrder="true">
+    <legendlayer checked="Qt::Unchecked" name="north_dakota_counties" drawingOrder="-1" open="true" showFeatureCount="0">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="0" isInOverview="0" layerid="north_dakota_counties_c39b0d42_58ee_4aef_976b_11023271f736"/>
+      </filegroup>
+    </legendlayer>
     <legendlayer checked="Qt::Checked" name="ACSST5Y2018.S1701_data_with_overlays_2020-09-18T181020" drawingOrder="-1" open="true" showFeatureCount="0">
       <filegroup hidden="false" open="true">
         <legendlayerfile visible="1" isInOverview="0" layerid="ACSST5Y2018_S1701_data_with_overlays_2020_09_18T181020_0b16864a_ee02_4e45_a8ce_58c93ba72443"/>
@@ -824,9 +834,338 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>NAME</previewExpression>
       <mapTip></mapTip>
     </maplayer>
+    <maplayer wkbType="MultiPolygon" autoRefreshTime="0" refreshOnNotifyMessage="" simplifyDrawingTol="1" labelsEnabled="0" type="vector" readOnly="0" refreshOnNotifyEnabled="0" maxScale="0" minScale="1e+08" autoRefreshEnabled="0" simplifyDrawingHints="1" styleCategories="AllStyleCategories" simplifyAlgorithm="0" simplifyMaxScale="1" geometry="Polygon" simplifyLocal="1" hasScaleBasedVisibilityFlag="0">
+      <extent>
+        <xmin>-104.0491180000000071</xmin>
+        <ymin>45.93507199999999813</ymin>
+        <xmax>-96.55441100000000176</xmax>
+        <ymax>49.0006919999866426</ymax>
+      </extent>
+      <id>north_dakota_counties_c39b0d42_58ee_4aef_976b_11023271f736</id>
+      <datasource>./north_dakota_counties.geojson|layername=north_dakota_counties</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>north_dakota_counties</layername>
+      <srs>
+        <spatialrefsys>
+          <wkt>GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]]</wkt>
+          <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+          <srsid>3452</srsid>
+          <srid>4326</srid>
+          <authid>EPSG:4326</authid>
+          <description>WGS 84</description>
+          <projectionacronym>longlat</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>true</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type>dataset</type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <wkt></wkt>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider encoding="UTF-8">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <dataDependencies/>
+      <legend type="default-vector"/>
+      <expressionfields/>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <auxiliaryLayer/>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <renderer-v2 type="singleSymbol" enableorderby="0" forceraster="0" symbollevels="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="0" force_rhr="0">
+            <layer pass="0" class="SimpleFill" enabled="1" locked="0">
+              <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+              <prop v="232,113,141,255" k="color"/>
+              <prop v="bevel" k="joinstyle"/>
+              <prop v="0,0" k="offset"/>
+              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+              <prop v="MM" k="offset_unit"/>
+              <prop v="35,35,35,255" k="outline_color"/>
+              <prop v="solid" k="outline_style"/>
+              <prop v="0.26" k="outline_width"/>
+              <prop v="MM" k="outline_width_unit"/>
+              <prop v="solid" k="style"/>
+              <data_defined_properties>
+                <Option type="Map">
+                  <Option value="" type="QString" name="name"/>
+                  <Option name="properties"/>
+                  <Option value="collection" type="QString" name="type"/>
+                </Option>
+              </data_defined_properties>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale/>
+      </renderer-v2>
+      <customproperties/>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerOpacity>1</layerOpacity>
+      <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+        <activeChecks type="StringList">
+          <Option value="" type="QString"/>
+        </activeChecks>
+        <checkConfiguration/>
+      </geometryOptions>
+      <fieldConfiguration>
+        <field name="STATEFP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COUNTYFP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="COUNTYNS">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="GEOID">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAME">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="NAMELSAD">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="LSAD">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CLASSFP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="MTFCC">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CSAFP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="CBSAFP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="METDIVFP">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="FUNCSTAT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="ALAND">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="AWATER">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="INTPTLAT">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+        <field name="INTPTLON">
+          <editWidget type="">
+            <config>
+              <Option/>
+            </config>
+          </editWidget>
+        </field>
+      </fieldConfiguration>
+      <aliases>
+        <alias field="STATEFP" name="" index="0"/>
+        <alias field="COUNTYFP" name="" index="1"/>
+        <alias field="COUNTYNS" name="" index="2"/>
+        <alias field="GEOID" name="" index="3"/>
+        <alias field="NAME" name="" index="4"/>
+        <alias field="NAMELSAD" name="" index="5"/>
+        <alias field="LSAD" name="" index="6"/>
+        <alias field="CLASSFP" name="" index="7"/>
+        <alias field="MTFCC" name="" index="8"/>
+        <alias field="CSAFP" name="" index="9"/>
+        <alias field="CBSAFP" name="" index="10"/>
+        <alias field="METDIVFP" name="" index="11"/>
+        <alias field="FUNCSTAT" name="" index="12"/>
+        <alias field="ALAND" name="" index="13"/>
+        <alias field="AWATER" name="" index="14"/>
+        <alias field="INTPTLAT" name="" index="15"/>
+        <alias field="INTPTLON" name="" index="16"/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <defaults>
+        <default field="STATEFP" expression="" applyOnUpdate="0"/>
+        <default field="COUNTYFP" expression="" applyOnUpdate="0"/>
+        <default field="COUNTYNS" expression="" applyOnUpdate="0"/>
+        <default field="GEOID" expression="" applyOnUpdate="0"/>
+        <default field="NAME" expression="" applyOnUpdate="0"/>
+        <default field="NAMELSAD" expression="" applyOnUpdate="0"/>
+        <default field="LSAD" expression="" applyOnUpdate="0"/>
+        <default field="CLASSFP" expression="" applyOnUpdate="0"/>
+        <default field="MTFCC" expression="" applyOnUpdate="0"/>
+        <default field="CSAFP" expression="" applyOnUpdate="0"/>
+        <default field="CBSAFP" expression="" applyOnUpdate="0"/>
+        <default field="METDIVFP" expression="" applyOnUpdate="0"/>
+        <default field="FUNCSTAT" expression="" applyOnUpdate="0"/>
+        <default field="ALAND" expression="" applyOnUpdate="0"/>
+        <default field="AWATER" expression="" applyOnUpdate="0"/>
+        <default field="INTPTLAT" expression="" applyOnUpdate="0"/>
+        <default field="INTPTLON" expression="" applyOnUpdate="0"/>
+      </defaults>
+      <constraints>
+        <constraint field="STATEFP" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="COUNTYFP" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="COUNTYNS" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="GEOID" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="NAME" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="NAMELSAD" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="LSAD" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="CLASSFP" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="MTFCC" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="CSAFP" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="CBSAFP" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="METDIVFP" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="FUNCSTAT" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="ALAND" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="AWATER" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="INTPTLAT" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+        <constraint field="INTPTLON" constraints="0" exp_strength="0" unique_strength="0" notnull_strength="0"/>
+      </constraints>
+      <constraintExpressions>
+        <constraint desc="" field="STATEFP" exp=""/>
+        <constraint desc="" field="COUNTYFP" exp=""/>
+        <constraint desc="" field="COUNTYNS" exp=""/>
+        <constraint desc="" field="GEOID" exp=""/>
+        <constraint desc="" field="NAME" exp=""/>
+        <constraint desc="" field="NAMELSAD" exp=""/>
+        <constraint desc="" field="LSAD" exp=""/>
+        <constraint desc="" field="CLASSFP" exp=""/>
+        <constraint desc="" field="MTFCC" exp=""/>
+        <constraint desc="" field="CSAFP" exp=""/>
+        <constraint desc="" field="CBSAFP" exp=""/>
+        <constraint desc="" field="METDIVFP" exp=""/>
+        <constraint desc="" field="FUNCSTAT" exp=""/>
+        <constraint desc="" field="ALAND" exp=""/>
+        <constraint desc="" field="AWATER" exp=""/>
+        <constraint desc="" field="INTPTLAT" exp=""/>
+        <constraint desc="" field="INTPTLON" exp=""/>
+      </constraintExpressions>
+      <expressionfields/>
+      <attributeactions>
+        <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+      </attributeactions>
+      <attributetableconfig sortExpression="" actionWidgetStyle="dropDown" sortOrder="0">
+        <columns/>
+      </attributetableconfig>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <storedexpressions/>
+      <editform tolerant="1"></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <editable/>
+      <labelOnTop/>
+      <widgets/>
+      <previewExpression></previewExpression>
+      <mapTip></mapTip>
+    </maplayer>
   </projectlayers>
   <layerorder>
     <layer id="nd_102720_c64b6ae7_f6a1_4d69_a20a_ad74ea184c14"/>
+    <layer id="north_dakota_counties_c39b0d42_58ee_4aef_976b_11023271f736"/>
   </layerorder>
   <properties>
     <DefaultStyles>
@@ -847,7 +1186,7 @@ def my_form_open(dialog, layer, feature):
       <SelectionColorRedPart type="int">255</SelectionColorRedPart>
     </Gui>
     <Layouts>
-      <lastLayoutExportDir type="QString">/Users/alexanderhubbs/Downloads/Geo370fall/geo370fall/HW7/Homework_7_map.pdf</lastLayoutExportDir>
+      <lastLayoutExportDir type="QString">/Users/alexanderhubbs/Downloads/Geo370fall/geo370fall/HW7</lastLayoutExportDir>
     </Layouts>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
@@ -1206,7 +1545,7 @@ def my_form_open(dialog, layer, feature):
         <LabelFont description="Al Bayan,18,-1,5,50,0,0,0,0,0,Plain" style="Plain"/>
         <FontColor alpha="255" red="0" blue="0" green="0"/>
       </LayoutItem>
-      <LayoutItem position="184.856,87.7075,mm" map_uuid="{a9e04c4b-4925-4b7e-ab22-5a575bfc179d}" referencePoint="0" id="" outlineWidthM="0.3,mm" type="65642" templateUuid="{6756cc40-5449-4dfb-92ba-331c7638aad4}" itemRotation="0" boxSpace="2" fontColor="#000000" background="true" legendFilterByAtlas="0" size="89.8891,44.0594,mm" rasterBorder="1" title="" opacity="1" columnCount="1" frameJoinStyle="miter" columnSpace="2" excludeFromExports="0" rasterBorderColor="0,0,0,255" lineSpacing="1" wmsLegendWidth="50" positionOnPage="184.856,87.7075,mm" resizeToContents="1" wmsLegendHeight="25" groupUuid="" symbolAlignment="1" rasterBorderWidth="0" symbolWidth="7" blendMode="0" zValue="3" symbolHeight="4" wrapChar="" uuid="{6756cc40-5449-4dfb-92ba-331c7638aad4}" titleAlignment="1" equalColumnWidth="0" positionLock="false" frame="false" visibility="1" splitLayer="0">
+      <LayoutItem position="184.856,87.7075,mm" map_uuid="{a9e04c4b-4925-4b7e-ab22-5a575bfc179d}" referencePoint="0" id="" outlineWidthM="0.3,mm" type="65642" templateUuid="{6756cc40-5449-4dfb-92ba-331c7638aad4}" itemRotation="0" boxSpace="2" fontColor="#000000" background="true" legendFilterByAtlas="0" size="103.047,44.0594,mm" rasterBorder="1" title="" opacity="1" columnCount="1" frameJoinStyle="miter" columnSpace="2" excludeFromExports="0" rasterBorderColor="0,0,0,255" lineSpacing="1" wmsLegendWidth="50" positionOnPage="184.856,87.7075,mm" resizeToContents="1" wmsLegendHeight="25" groupUuid="" symbolAlignment="1" rasterBorderWidth="0" symbolWidth="7" blendMode="0" zValue="3" symbolHeight="4" wrapChar="" uuid="{6756cc40-5449-4dfb-92ba-331c7638aad4}" titleAlignment="1" equalColumnWidth="0" positionLock="false" frame="false" visibility="1" splitLayer="0">
         <FrameColor alpha="255" red="0" blue="0" green="0"/>
         <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
         <LayoutObject>
@@ -1240,7 +1579,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
           <layer-tree-layer checked="Qt::Checked" id="nd_102720_c64b6ae7_f6a1_4d69_a20a_ad74ea184c14" name="nd_102720" providerKey="ogr" legend_exp="" source="./nd_102720.shp" expanded="1">
             <customproperties>
-              <property value="Estimated Population Living Below Poverty Level" key="legend/title-label"/>
+              <property value="Estimated Number of People Living Below Poverty Level" key="legend/title-label"/>
             </customproperties>
           </layer-tree-layer>
           <custom-order enabled="0">
@@ -1285,6 +1624,12 @@ def my_form_open(dialog, layer, feature):
       <customproperties>
         <property value="png" key="atlasRasterFormat"/>
         <property value="0" key="forceVector"/>
+        <property value="true" key="imageAntialias"/>
+        <property value="0" key="imageCropMarginBottom"/>
+        <property value="0" key="imageCropMarginLeft"/>
+        <property value="0" key="imageCropMarginRight"/>
+        <property value="0" key="imageCropMarginTop"/>
+        <property value="false" key="imageCropToContents"/>
         <property value="1" key="pdfAppendGeoreference"/>
         <property value="0" key="pdfCreateGeoPdf"/>
         <property value="0" key="pdfDisableRasterTiles"/>
