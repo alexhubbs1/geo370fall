@@ -1,0 +1,185 @@
+<Layout printResolution="300" worldFileMap="{180e0a07-d46e-4d6a-951b-f016c37ea3b1}" units="mm" name="Test 2">
+ <Snapper snapToGrid="0" snapToItems="1" tolerance="5" snapToGuides="1"/>
+ <Grid offsetY="0" offsetX="0" offsetUnits="mm" resolution="10" resUnits="mm"/>
+ <PageCollection>
+  <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="">
+   <layer locked="0" enabled="1" pass="0" class="SimpleFill">
+    <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+    <prop v="255,255,255,255" k="color"/>
+    <prop v="miter" k="joinstyle"/>
+    <prop v="0,0" k="offset"/>
+    <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+    <prop v="MM" k="offset_unit"/>
+    <prop v="35,35,35,255" k="outline_color"/>
+    <prop v="no" k="outline_style"/>
+    <prop v="0.26" k="outline_width"/>
+    <prop v="MM" k="outline_width_unit"/>
+    <prop v="solid" k="style"/>
+    <data_defined_properties>
+     <Option type="Map">
+      <Option value="" type="QString" name="name"/>
+      <Option name="properties"/>
+      <Option value="collection" type="QString" name="type"/>
+     </Option>
+    </data_defined_properties>
+   </layer>
+  </symbol>
+  <LayoutItem itemRotation="0" zValue="0" groupUuid="" outlineWidthM="0.3,mm" position="0,0,mm" background="true" size="297,210,mm" type="65638" opacity="1" referencePoint="0" frame="false" uuid="{86aeeb07-d814-4d1a-8bc2-63eeca2918d2}" excludeFromExports="0" frameJoinStyle="miter" blendMode="0" positionLock="false" id="" templateUuid="{86aeeb07-d814-4d1a-8bc2-63eeca2918d2}" positionOnPage="0,0,mm" visibility="1">
+   <FrameColor green="0" blue="0" alpha="255" red="0"/>
+   <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+   <LayoutObject>
+    <dataDefinedProperties>
+     <Option type="Map">
+      <Option value="" type="QString" name="name"/>
+      <Option name="properties"/>
+      <Option value="collection" type="QString" name="type"/>
+     </Option>
+    </dataDefinedProperties>
+    <customproperties/>
+   </LayoutObject>
+   <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="">
+    <layer locked="0" enabled="1" pass="0" class="SimpleFill">
+     <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
+     <prop v="255,255,255,255" k="color"/>
+     <prop v="miter" k="joinstyle"/>
+     <prop v="0,0" k="offset"/>
+     <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
+     <prop v="MM" k="offset_unit"/>
+     <prop v="35,35,35,255" k="outline_color"/>
+     <prop v="no" k="outline_style"/>
+     <prop v="0.26" k="outline_width"/>
+     <prop v="MM" k="outline_width_unit"/>
+     <prop v="solid" k="style"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option value="" type="QString" name="name"/>
+       <Option name="properties"/>
+       <Option value="collection" type="QString" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </LayoutItem>
+  <GuideCollection visible="1"/>
+ </PageCollection>
+ <LayoutItem itemRotation="0" htmlState="0" zValue="5" groupUuid="" outlineWidthM="0.3,mm" position="188.997,121.921,mm" background="false" marginY="0" size="65.1033,13.4152,mm" type="65641" opacity="1" referencePoint="0" frame="false" uuid="{9fc7e9dd-43da-427d-a546-0f50eb4a3963}" marginX="0" excludeFromExports="0" frameJoinStyle="miter" blendMode="0" positionLock="false" labelText="Red dot: state capitol with population greater than 400,000&#xa;Green Dot: state capitol with population less than 400,000&#xa;" id="" valign="32" templateUuid="{9fc7e9dd-43da-427d-a546-0f50eb4a3963}" positionOnPage="188.997,121.921,mm" visibility="1" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont style="" description=".SF NS Text,10,-1,5,50,0,0,0,0,0"/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem itemRotation="0" htmlState="0" zValue="4" groupUuid="" outlineWidthM="0.3,mm" position="28.4087,20.5174,mm" background="false" marginY="0" size="235.95,24.8576,mm" type="65641" opacity="1" referencePoint="0" frame="false" uuid="{5027c184-34e5-4b46-b90e-0150b659c64e}" marginX="0" excludeFromExports="0" frameJoinStyle="miter" blendMode="0" positionLock="false" labelText="Each State's Population Compared to its size in Square Miles" id="" valign="32" templateUuid="{5027c184-34e5-4b46-b90e-0150b659c64e}" positionOnPage="28.4087,20.5174,mm" visibility="1" halign="8">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont style="" description=".SF NS Text,26,-1,5,50,0,0,0,0,0"/>
+  <FontColor green="0" blue="0" alpha="255" red="0"/>
+ </LayoutItem>
+ <LayoutItem pictureWidth="14.9935" itemRotation="0" northOffset="0" pictureRotation="0" zValue="3" groupUuid="" outlineWidthM="0.3,mm" position="20.912,61.9467,mm" anchorPoint="0" background="false" mapUuid="{180e0a07-d46e-4d6a-951b-f016c37ea3b1}" size="14.9935,23.6739,mm" type="65640" opacity="1" referencePoint="0" frame="false" svgBorderWidth="0.2" uuid="{5d3e53ac-ad6e-4cd2-99a0-5de8640c35a3}" pictureHeight="18.9262" resizeMode="0" svgFillColor="0,0,0,255" svgBorderColor="0,0,0,255" excludeFromExports="0" frameJoinStyle="miter" blendMode="0" positionLock="false" file=":/images/north_arrows/layout_default_north_arrow.svg" northMode="0" id="North Arrow" templateUuid="{5d3e53ac-ad6e-4cd2-99a0-5de8640c35a3}" positionOnPage="20.912,61.9467,mm" visibility="1">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+ </LayoutItem>
+ <LayoutItem positionOnPage="188.997,81.675,mm" frameJoinStyle="miter" wrapChar="" outlineWidthM="0.3,mm" map_uuid="{180e0a07-d46e-4d6a-951b-f016c37ea3b1}" rasterBorder="1" legendFilterByAtlas="0" groupUuid="" boxSpace="2" title="" columnSpace="2" zValue="2" lineSpacing="1" position="188.997,81.675,mm" blendMode="0" type="65642" rasterBorderColor="0,0,0,255" visibility="1" itemRotation="0" titleAlignment="1" positionLock="false" background="true" referencePoint="0" opacity="1" templateUuid="{421931eb-2753-46dd-863f-21b1a6350a7a}" fontColor="#000000" symbolWidth="7" symbolAlignment="1" size="61.3719,37.5594,mm" wmsLegendHeight="25" symbolHeight="4" rasterBorderWidth="0" wmsLegendWidth="50" columnCount="1" frame="false" id="" resizeToContents="1" excludeFromExports="0" splitLayer="0" equalColumnWidth="0" uuid="{421931eb-2753-46dd-863f-21b1a6350a7a}">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <styles>
+   <style marginBottom="3.5" alignment="1" name="title">
+    <styleFont style="" description=".SF NS Text,16,-1,5,50,0,0,0,0,0"/>
+   </style>
+   <style alignment="1" marginTop="3" name="group">
+    <styleFont style="" description=".SF NS Text,14,-1,5,50,0,0,0,0,0"/>
+   </style>
+   <style alignment="1" marginTop="3" name="subgroup">
+    <styleFont style="" description=".SF NS Text,12,-1,5,50,0,0,0,0,0"/>
+   </style>
+   <style alignment="1" marginTop="2.5" name="symbol">
+    <styleFont style="" description=".SF NS Text,13,-1,5,50,0,0,0,0,0"/>
+   </style>
+   <style alignment="1" marginTop="2" marginLeft="2" name="symbolLabel">
+    <styleFont style="" description=".SF NS Text,12,-1,5,50,0,0,0,0,0"/>
+   </style>
+  </styles>
+  <layer-tree-group>
+   <customproperties/>
+   <layer-tree-layer checked="Qt::Checked" expanded="1" id="US_1920_4326_2266f857_9108_4309_a88e_22705583037a" source="/Users/alexanderhubbs/Downloads/Exam_2_GEOG370_Oct1_2020/US_1920_4326.shp" legend_exp="" name="US_1920_4326" providerKey="ogr">
+    <customproperties>
+     <property value="State's Population/ Square miles" key="legend/title-label"/>
+    </customproperties>
+   </layer-tree-layer>
+   <custom-order enabled="0">
+    <item>US_1920_4326_2266f857_9108_4309_a88e_22705583037a</item>
+   </custom-order>
+  </layer-tree-group>
+ </LayoutItem>
+ <LayoutItem followPreset="false" itemRotation="0" zValue="1" groupUuid="" outlineWidthM="0.3,mm" position="20.912,36.6946,mm" background="true" mapFlags="0" size="257.651,130.996,mm" type="65639" opacity="1" referencePoint="0" frame="false" uuid="{180e0a07-d46e-4d6a-951b-f016c37ea3b1}" drawCanvasItems="true" excludeFromExports="0" mapRotation="0" frameJoinStyle="miter" blendMode="0" positionLock="false" keepLayerSet="false" id="" labelMargin="0,mm" templateUuid="{180e0a07-d46e-4d6a-951b-f016c37ea3b1}" positionOnPage="20.912,36.6946,mm" visibility="1" followPresetName="">
+  <FrameColor green="0" blue="0" alpha="255" red="0"/>
+  <BackgroundColor green="255" blue="255" alpha="255" red="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option value="" type="QString" name="name"/>
+     <Option name="properties"/>
+     <Option value="collection" type="QString" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="-3395814.05563695169985294" ymin="-3257977.72033542627468705" ymax="2515182.75809508515521884" xmax="7959227.48778209835290909"/>
+  <LayerSet/>
+  <AtlasMap atlasDriven="0" margin="0.10000000000000001" scalingMode="2"/>
+  <labelBlockingItems/>
+ </LayoutItem>
+ <customproperties>
+  <property value="png" key="atlasRasterFormat"/>
+  <property value="0" key="forceVector"/>
+  <property value="1" key="pdfAppendGeoreference"/>
+  <property value="0" key="pdfCreateGeoPdf"/>
+  <property value="0" key="pdfDisableRasterTiles"/>
+  <property value="0" key="pdfExportGeoPdfFeatures"/>
+  <property value="" key="pdfExportThemes"/>
+  <property value="1" key="pdfIncludeMetadata"/>
+  <property value="0" key="pdfOgcBestPracticeFormat"/>
+  <property value="1" key="pdfSimplify"/>
+  <property value="0" key="pdfTextFormat"/>
+ </customproperties>
+ <Atlas filenamePattern="'output_'||@atlas_featurenumber" enabled="0" pageNameExpression="" hideCoverage="0" sortFeatures="0" coverageLayer="" filterFeatures="0"/>
+</Layout>
