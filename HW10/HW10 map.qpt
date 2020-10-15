@@ -1,0 +1,169 @@
+<Layout units="mm" worldFileMap="{8a9cce74-45c2-4421-b156-06f9327015a1}" printResolution="300" name="HW10">
+ <Snapper snapToGuides="1" snapToItems="1" tolerance="5" snapToGrid="0"/>
+ <Grid resUnits="mm" offsetUnits="mm" resolution="10" offsetY="0" offsetX="0"/>
+ <PageCollection>
+  <symbol type="fill" alpha="1" clip_to_extent="1" force_rhr="0" name="">
+   <layer locked="0" pass="0" class="SimpleFill" enabled="1">
+    <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+    <prop k="color" v="255,255,255,255"/>
+    <prop k="joinstyle" v="miter"/>
+    <prop k="offset" v="0,0"/>
+    <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+    <prop k="offset_unit" v="MM"/>
+    <prop k="outline_color" v="35,35,35,255"/>
+    <prop k="outline_style" v="no"/>
+    <prop k="outline_width" v="0.26"/>
+    <prop k="outline_width_unit" v="MM"/>
+    <prop k="style" v="solid"/>
+    <data_defined_properties>
+     <Option type="Map">
+      <Option type="QString" value="" name="name"/>
+      <Option name="properties"/>
+      <Option type="QString" value="collection" name="type"/>
+     </Option>
+    </data_defined_properties>
+   </layer>
+  </symbol>
+  <LayoutItem uuid="{3487d6aa-d308-4afd-a456-2ded66935b8e}" outlineWidthM="0.3,mm" opacity="1" type="65638" zValue="0" visibility="1" frame="false" positionLock="false" templateUuid="{3487d6aa-d308-4afd-a456-2ded66935b8e}" id="" groupUuid="" referencePoint="0" positionOnPage="0,0,mm" excludeFromExports="0" frameJoinStyle="miter" background="true" size="297,210,mm" position="0,0,mm" itemRotation="0" blendMode="0">
+   <FrameColor alpha="255" green="0" red="0" blue="0"/>
+   <BackgroundColor alpha="255" green="255" red="255" blue="255"/>
+   <LayoutObject>
+    <dataDefinedProperties>
+     <Option type="Map">
+      <Option type="QString" value="" name="name"/>
+      <Option name="properties"/>
+      <Option type="QString" value="collection" name="type"/>
+     </Option>
+    </dataDefinedProperties>
+    <customproperties/>
+   </LayoutObject>
+   <symbol type="fill" alpha="1" clip_to_extent="1" force_rhr="0" name="">
+    <layer locked="0" pass="0" class="SimpleFill" enabled="1">
+     <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="color" v="255,255,255,255"/>
+     <prop k="joinstyle" v="miter"/>
+     <prop k="offset" v="0,0"/>
+     <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+     <prop k="offset_unit" v="MM"/>
+     <prop k="outline_color" v="35,35,35,255"/>
+     <prop k="outline_style" v="no"/>
+     <prop k="outline_width" v="0.26"/>
+     <prop k="outline_width_unit" v="MM"/>
+     <prop k="style" v="solid"/>
+     <data_defined_properties>
+      <Option type="Map">
+       <Option type="QString" value="" name="name"/>
+       <Option name="properties"/>
+       <Option type="QString" value="collection" name="type"/>
+      </Option>
+     </data_defined_properties>
+    </layer>
+   </symbol>
+  </LayoutItem>
+  <GuideCollection visible="1"/>
+ </PageCollection>
+ <LayoutItem position="183.867,65.8924,mm" uuid="{1cc3b9c4-faca-42d3-8ba5-af41d1ac9ba4}" background="true" referencePoint="0" boxSpace="2" blendMode="0" frame="false" wmsLegendHeight="25" symbolWidth="7" symbolAlignment="1" resizeToContents="1" columnSpace="2" fontColor="#000000" zValue="3" itemRotation="0" legendFilterByAtlas="0" rasterBorderWidth="0" columnCount="1" groupUuid="" frameJoinStyle="miter" symbolHeight="4" rasterBorder="1" title="" map_uuid="{8a9cce74-45c2-4421-b156-06f9327015a1}" excludeFromExports="0" outlineWidthM="0.3,mm" wrapChar="" opacity="1" type="65642" wmsLegendWidth="50" splitLayer="0" size="95.0703,37.5,mm" id="" positionLock="false" visibility="1" templateUuid="{1cc3b9c4-faca-42d3-8ba5-af41d1ac9ba4}" positionOnPage="183.867,65.8924,mm" titleAlignment="1" rasterBorderColor="0,0,0,255" equalColumnWidth="0" lineSpacing="1">
+  <FrameColor alpha="255" green="0" red="0" blue="0"/>
+  <BackgroundColor alpha="255" green="255" red="255" blue="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option type="QString" value="" name="name"/>
+     <Option name="properties"/>
+     <Option type="QString" value="collection" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <styles>
+   <style alignment="1" marginBottom="3.5" name="title">
+    <styleFont style="" description=".SF NS Text,16,-1,5,50,0,0,0,0,0"/>
+   </style>
+   <style marginTop="3" alignment="1" name="group">
+    <styleFont style="" description=".SF NS Text,14,-1,5,50,0,0,0,0,0"/>
+   </style>
+   <style marginTop="3" alignment="1" name="subgroup">
+    <styleFont style="" description=".SF NS Text,12,-1,5,50,0,0,0,0,0"/>
+   </style>
+   <style marginTop="2.5" alignment="1" name="symbol">
+    <styleFont style="" description=".SF NS Text,13,-1,5,50,0,0,0,0,0"/>
+   </style>
+   <style marginLeft="2" marginTop="2" alignment="1" name="symbolLabel">
+    <styleFont style="" description=".SF NS Text,12,-1,5,50,0,0,0,0,0"/>
+   </style>
+  </styles>
+  <layer-tree-group>
+   <customproperties/>
+   <layer-tree-layer checked="Qt::Checked" id="Intersection_c7c03245_4f66_4fc7_b240_089b986a2ce9" providerKey="memory" source="MultiPolygon?crs=EPSG:2264&amp;field=OBJECTID:integer(3,0)&amp;field=TRACTCE10:string(6,0)&amp;field=GEOID10:string(11,0)&amp;field=NAME10:string(5,0)&amp;field=NAMELSAD10:string(18,0)&amp;field=Geography:string(54,0)&amp;field=Population:integer(5,0)&amp;field=Populati_1:integer(4,0)&amp;field=Populati_2:double(23,15)&amp;field=SHAPESTAre:double(23,15)&amp;field=SHAPESTLen:double(23,15)&amp;field=OBJECTID_2:integer(1,0)&amp;field=ShapeSTAre_2:double(23,15)&amp;field=ShapeSTLen_2:double(23,15)&amp;uid={eafeacaa-9244-4a7a-aaa3-95438adbaa59}" expanded="1" legend_exp="" name="Intersection">
+    <customproperties>
+     <property value="Where Poverty and Noise Pollution Overlap" key="legend/title-label"/>
+    </customproperties>
+   </layer-tree-layer>
+   <layer-tree-layer checked="Qt::Checked" id="Census_Poverty_Tracts_d6b90bd3_debd_4c4a_94d9_7414a49aeb6d" providerKey="ogr" source="./downloaded_data/Census_Poverty_Tracts-shp/Census_Poverty_Tracts.shp" expanded="1" legend_exp="" name="Census_Poverty_Tracts">
+    <customproperties>
+     <property value="Areas where Poverty Rate is Above 0.25(25%)" key="legend/title-label"/>
+    </customproperties>
+   </layer-tree-layer>
+   <layer-tree-layer checked="Qt::Checked" id="Airport_Noise_Overlay_f550b34f_d994_48ad_8217_ca9b897c5070" providerKey="ogr" source="./downloaded_data/Airport_Noise_Overlay-shp/Airport_Noise_Overlay.shp" expanded="1" legend_exp="" name="Airport_Noise_Overlay">
+    <customproperties>
+     <property value="Airport Noise Overlay" key="legend/title-label"/>
+    </customproperties>
+   </layer-tree-layer>
+   <layer-tree-layer checked="Qt::Checked" id="Buffered_b9416991_a5ad_476c_99bd_a56ca3bb3fd1" providerKey="memory" source="MultiPolygon?crs=EPSG:2264&amp;field=OBJECTID:integer(1,0)&amp;field=ShapeSTAre:double(23,15)&amp;field=ShapeSTLen:double(23,15)&amp;uid={f063d162-ff61-47d4-9213-2e448c60a8d0}" expanded="1" legend_exp="" name="Buffered">
+    <customproperties>
+     <property value="Area Affected By Airport Noise" key="legend/title-label"/>
+    </customproperties>
+   </layer-tree-layer>
+   <layer-tree-layer checked="Qt::Checked" id="county_pop_NC_a1f9f7c9_3604_42c6_9bc2_8d4f19e5e0a9" providerKey="ogr" source="./downloaded_data/county_pop_NC/county_pop_NC.shp" expanded="1" legend_exp="" name="county_pop_NC">
+    <customproperties>
+     <property value="Mecklenburg County" key="legend/title-label"/>
+    </customproperties>
+   </layer-tree-layer>
+   <custom-order enabled="0">
+    <item>Airport_Noise_Overlay_f550b34f_d994_48ad_8217_ca9b897c5070</item>
+    <item>county_pop_NC_a1f9f7c9_3604_42c6_9bc2_8d4f19e5e0a9</item>
+    <item>Census_Poverty_Tracts_d6b90bd3_debd_4c4a_94d9_7414a49aeb6d</item>
+    <item>Buffered_b9416991_a5ad_476c_99bd_a56ca3bb3fd1</item>
+    <item>Intersection_c7c03245_4f66_4fc7_b240_089b986a2ce9</item>
+   </custom-order>
+  </layer-tree-group>
+ </LayoutItem>
+ <LayoutItem uuid="{2ec801cb-242a-4446-9035-151624a7ed29}" outlineWidthM="0.3,mm" opacity="1" labelText="Poverty and Airport Noise Pollution" type="65641" zValue="2" visibility="1" frame="false" positionLock="false" templateUuid="{2ec801cb-242a-4446-9035-151624a7ed29}" id="" groupUuid="" halign="8" referencePoint="0" positionOnPage="83.1995,11.0935,mm" excludeFromExports="0" marginX="0" marginY="0" frameJoinStyle="miter" background="false" size="130.601,11.4424,mm" position="83.1995,11.0935,mm" valign="32" itemRotation="0" blendMode="0" htmlState="0">
+  <FrameColor alpha="255" green="0" red="0" blue="0"/>
+  <BackgroundColor alpha="255" green="255" red="255" blue="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option type="QString" value="" name="name"/>
+     <Option name="properties"/>
+     <Option type="QString" value="collection" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <LabelFont style="" description=".SF NS Text,25,-1,5,50,0,0,0,0,0"/>
+  <FontColor alpha="255" green="0" red="0" blue="0"/>
+ </LayoutItem>
+ <LayoutItem uuid="{8a9cce74-45c2-4421-b156-06f9327015a1}" outlineWidthM="0.3,mm" opacity="1" type="65639" keepLayerSet="false" zValue="1" visibility="1" frame="false" labelMargin="0,mm" positionLock="false" templateUuid="{8a9cce74-45c2-4421-b156-06f9327015a1}" id="" groupUuid="" followPresetName="" referencePoint="0" positionOnPage="13.4152,22.5359,mm" excludeFromExports="0" mapFlags="0" followPreset="false" frameJoinStyle="miter" background="true" size="234.766,173.214,mm" position="13.4152,22.5359,mm" mapRotation="0" itemRotation="0" blendMode="0" drawCanvasItems="true">
+  <FrameColor alpha="255" green="0" red="0" blue="0"/>
+  <BackgroundColor alpha="255" green="255" red="255" blue="255"/>
+  <LayoutObject>
+   <dataDefinedProperties>
+    <Option type="Map">
+     <Option type="QString" value="" name="name"/>
+     <Option name="properties"/>
+     <Option type="QString" value="collection" name="type"/>
+    </Option>
+   </dataDefinedProperties>
+   <customproperties/>
+  </LayoutObject>
+  <Extent xmin="1364970.3991083619184792" xmax="1632896.71240956941619515" ymax="651376.82906477409414947" ymin="453696.7424442193005234"/>
+  <LayerSet/>
+  <AtlasMap atlasDriven="0" margin="0.10000000000000001" scalingMode="2"/>
+  <labelBlockingItems/>
+ </LayoutItem>
+ <customproperties>
+  <property value="png" key="atlasRasterFormat"/>
+ </customproperties>
+ <Atlas filterFeatures="0" sortFeatures="0" pageNameExpression="" enabled="0" coverageLayer="" filenamePattern="'output_'||@atlas_featurenumber" hideCoverage="0"/>
+</Layout>
